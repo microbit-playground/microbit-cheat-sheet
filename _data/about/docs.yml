@@ -1,0 +1,5 @@
+name: "Offical Documentation"
+image: "/images/microbit-docs.png"
+link: "https://microbit-micropython.readthedocs.org/en/latest/index.html"
+text: |
+  The documentation is far more thorough than this cheat sheet. Use them when you write your code.

@@ -1,0 +1,26 @@
+name: "Loops"
+description: "Loops handle logic and run the program."
+subsections:
+- name: "`while` loop"
+  description: "This is a description about a while loop."
+  code-example: "example of loop"
+
+- name: "`if` loop"
+  description: "Tests a condition"
+  code-example: |-
+    if microbit.button_a.is_pressed():
+      display.show(Image.HAPPY)
+      sleep(1000)
+      display.clear()
+  code-description: "`if` `button_a` is pressed show happy face, sleep for 1 second and clear the display."
+        
+- name: "`for` loop"
+  description: "for loops repeat an operation a set number of times"
+  code-example: "An example of a for loop."
+
+- name: "infinite loop"
+  description: "`while True` repeats statement forever."
+  code-example: |-
+    while True:
+      microbit.display(SAD)
+  code-description: "displays sad face forever."

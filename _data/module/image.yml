@@ -1,0 +1,44 @@
+name: "`Image(string)`"
+description: "used with `display` to show images"
+url: "https://microbit-micropython.readthedocs.org/en/latest/image.html"
+subsections:
+- name: "`Image(string)`"
+  description: "`string` is a list 5 values. Each value is a string of 5 numerals 0 - 9. Each numeral represents the brightness of the LED."
+  code-example: |-
+    cross = Image("90009:"
+                  "09090:"
+                  "00900:"
+                  "09090:"
+                  "90009")
+    display.image(cross)
+  code-description: "display an x on the LEDs. Note pattern of 9s-- they form a cross."
+
+- name: "predefined Images"
+  description: "Predefined images use with `display.image`"
+  code-example: |-
+    HEART_SMALL    DUCK
+    HAPPY          HOUSE
+    SMILE          TORTOISE
+    SAD            BUTTERFLY
+    CONFUSED       STICKFIGURE
+    ANGRY          GHOST
+    ASLEEP         SWORD
+    SURPRISED      GIRAFFE
+    SILLY          SKULL
+    FABULOUS       UMBRELLA
+    MEH            SNAKE
+    YES            DIAMOND
+    NO             DIAMOND_SMALL
+    TRIANGLE       SQUARE
+    TRIANGLE_LEFT  SQUARE_SMALL
+    CHESSBOARD     RABBIT
+    XMAS           COW
+    PACMAN         MUSIC_CROTCHET
+    TARGET         MUSIC_QUAVER
+    TSHIRT         MUSIC_QUAVERS
+    ROLLERSKATE    PITCHFORK
+    
+    CLOCK12, CLOCK11, etc
+    ARROW_N, ARROW_NE, etc
+
+  code-description: "`display.show(HEART_SMALL)` shows heart on micro:bit."

@@ -1,0 +1,24 @@
+name: "`display`"
+description: "controls 5x5 display on front of micro:bit"
+url: "https://microbit-micropython.readthedocs.org/en/latest/display.html"
+subsections:
+- name: "`display.get_pixel(x, y)`"
+  description: "return brightness of LED at column `x` and `y` as an integer between 0 (off) and 9 (bright)."
+
+- name: "`display.set_pixel`"
+  description: "set brightness of LED at column `x` and `y` as an integer between 0 (off) and 9 (bright)."
+  code-example: "`display.set_pixel(0,0,9)`"
+  code-description: top left pixel set to maxium brightness.
+        
+- name: "`display.clear`"
+  description: "clears micro:bit's display"
+
+- name: "`display.show(image)`"
+  description: "show a premade image on micro:bit's display. See separate entry for `image`."
+  code-example: "display.show(SAD)"
+  code-description: "sad face"
+
+- name: "`display.scroll(string)`"
+  description: "scroll a string across micro:bit's display. `delay` parameter controls scroll speed."
+  code-example: "display.scroll(hello world)"
+  code-description: "speed can be changed with `delay` parameter. `display.scroll(\"hello\", delay = 100)`"

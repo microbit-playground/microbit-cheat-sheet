@@ -1,0 +1,49 @@
+name: "`music`"
+description: "use `import music` to use the music module. Attach a speaker to `pin 0` and `GND pin`. _Use a speaker not buzzer_"
+image: "/images/microbit-music.png"
+url: "http://microbit-micropython.readthedocs.org/en/latest/tutorials/music.html"
+subsections:
+- name: "Introduction"
+  code-description: |-
+    
+    Each note has a name (`C#` or `F`) and can be followed by the octave. `C4` would is middle C. `C5` is the same note but one octave higher.
+    
+    Each note can be followed by a duration. `C4:4` plays middle C for 400 milliseconds.
+
+- name: "`music.play`"
+  description: "plays a tune through the speaker. Takes strings and strings in lists."
+  code-example: |-
+    tune = ["C4:4",
+            "D4:4",
+            "E4:4",
+            "C4:4",]
+    music.play(tune)
+  code-description: "Store 4 musical values in the `tune` list. Plays the list with `music.play(tune)`"
+
+        
+- name: "built-in melodies"
+  code-example: |-
+    DADADADUM    POWER_DOWN
+    ENTERTAINER  POWER_UP
+    PRELUDE      JUMP_DOWN
+    ODE          JUMP_UP
+    NYAN         WAWAWAWAA
+    RINGTONE     BA_DING
+    FUNK         CHASE
+    BLUES        BADDY
+    BIRTHDAY     PYTHON
+    WEDDING      PUNCHLINE
+    FUNERAL
+  code-description: |-
+    `music.play(music.FUNK)` to play the `FUNK` melody.
+
+    __note:__ melody name is preceded by `music.`
+
+    # add changing sound in responce to accelerometer 
+
+- name: "`music.pitch(freq, length)`"
+  description: "Make a sound of _freq_ Hz for _length_ milliseconds."
+  code-example: |-
+    while True:
+      music.pitch(accelerometer.get_y(), 10)
+  code-description: "Reads the value of the `y` axis from the accelerometer. Plays the value for 10 milliseconds and then repeats."

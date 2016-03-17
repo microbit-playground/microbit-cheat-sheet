@@ -1,0 +1,12 @@
+name: "import"
+description: "modules must be imported at the beginning of the program."
+api-url: "http://microbit-micropython.readthedocs.org/en/latest/"
+subsections:
+- name: "`from microbit import *`"
+  description: "the first line of code is always `from microbit import *`"
+- name: "`import random`"
+  description: "for using random numbers (eg. `random.choice(names)`)"
+- name: "`import neopixel`"
+  description: "for using a neopixel (a separate multicoloured light)"
+- name: "`import music`"
+  description: "for making sound (speaker needed)"

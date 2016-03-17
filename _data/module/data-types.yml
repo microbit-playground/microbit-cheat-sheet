@@ -1,0 +1,33 @@
+name: Data Types
+description: "Variables can hold different types of data"
+subsections:
+- name: "integers"
+  description: "Whole numbers."
+  code-example: |-
+    x5
+    y4
+    answer = x * y
+    display.scroll(str(answer))
+  code-description: |2-
+    Store product of 4 * 5 as an integer in `answer` variable. 
+    Convert the integer to a string (`str(answer)`) and scroll on display.
+
+- name: "strings"
+  description: "characters. Strings are always surronded by `\"` quotation marks."
+  code-example: |-
+    while True:
+      if microbit.button_a.is_pressed():
+        mystring = "I am a string"
+        display.scroll(mystring)
+  code-description: "if button_a is pressed show happy face, sleep for 1 second and clear the display. Then wait for button to be pressed again."
+        
+- name: "lists"
+  description: "list of values. Called arrays in other languages"
+  code-example: |-
+    houses   = ["Gryffindor",
+                "Slytherin",
+                "Ravenclaw",
+                "Hufflepuff",]
+
+    scores    = [84, 86, 91]
+  code-description: List of values separated by a comma surrounded by square brackets. Single or muliple lines.

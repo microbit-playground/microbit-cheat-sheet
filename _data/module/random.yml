@@ -1,0 +1,25 @@
+name: "`random`"
+description: "_must_ be loaded at beginning of program. Put `import random` after `from microbit import*`. "
+url: "https://microbit-micropython.readthedocs.org/en/latest/random.html"
+subsections:
+- name: "`random.randrange(stop)`"
+  description: "Return random number between 0 and up to (but not including) `stop`."
+  code-example: |-
+    random.randrange(10)
+  code-description: "get random integer between 0 and 10. `str()` to scroll on display."
+
+- name: "`randrange(start,stop)`"
+  description: "returns random integer between start - stop."
+  code-example: "randrange(20,30)"
+  code-description: "random number between 20 & 30."
+
+        
+- name: "`.choice`"
+  description: "pick random element from a list"
+  code-example: |-
+      houses   = ["Gryffindor",
+                "Slytherin",
+                "Ravenclaw",
+                "Hufflepuff",]
+      display.scroll(houses.choice)
+  code-description: "scroll random Hoggwards house."

@@ -1,0 +1,5 @@
+name: "About"
+text: |2-
+  This cheat sheet was put together by Jez Dean to help kids in his class. 
+
+  It is based on the [official, canonical documentation](https://microbit-micropython.readthedocs.org/en/latest/index.html). 

@@ -1,0 +1,5 @@
+name: "Online Editor"
+image: "/images/microbit-touch-develop.png"
+link: "https://www.microbit.co.uk/create-code"
+text: |
+  Python code can be used without installing _mu_. Click 'python' on the BBC micro:bit editor page.

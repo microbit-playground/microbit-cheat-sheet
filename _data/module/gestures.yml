@@ -1,0 +1,36 @@
+name: "Gestures"
+description: "used to detect how the micro:bit is moved"
+url: "https://microbit-micropython.readthedocs.org/en/latest/gestures.html"
+subsections:
+- name: "list of gestures"
+  code-example: |-
+    up        freefall
+    down      3g
+    left      6g
+    right     8g
+    face up   shake
+    face down
+
+- name: "`.current_gesture()`"
+  description: "returns the gesture (above) happening to the micro:bit."
+  code-example: |-
+    while True:
+      gesture = accelerometer.current_gesture()
+      if gesture == "face up":
+        display.show(Image.HAPPY)
+      else:
+        display.show(Image.ANGRY)
+
+  code-description: "`gesture` variable holds the gesture experienced by the micro:bit. If it's face up it shows a happy face.."
+        
+- name: "`.was_gesture`"
+  description: "returns last gesture experienced by the micro:bit."
+  code-example: |-
+    while True:
+      display.show(SAD)
+      if accelerometer.was_gesture("shake"):
+        display.show(SKULL)
+  code-description: |-
+    The micro:bit shows a *sad* face. If it experiences a force greater than eight times that of earth's gravitational pull it shows a sad face.
+    
+    Can you spin the micro:bit fast enough to experience that centrifugal force?
