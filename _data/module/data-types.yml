@@ -4,8 +4,8 @@ subsections:
 - name: "integers"
   description: "Whole numbers."
   code-example: |-
-    x5
-    y4
+    x = 5
+    y = 4
     answer = x * y
     display.scroll(str(answer))
   code-description: |2-
