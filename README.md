@@ -10,6 +10,6 @@ Questions/comments: jez@geekteacher.co.uk
 
 ## Why
 
-I've given Scratch cheat sheets to kids in my class and they've always made amazing programs (see my [Scratch Profile!](https://scratch.mit.edu/users/pixxy/).
+I've given Scratch cheat sheets to kids in my class and they've always made amazing programs (see my [Scratch Profile!)](https://scratch.mit.edu/users/pixxy/).
 
 This the version for the micro:bit!
