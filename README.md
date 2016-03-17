@@ -6,6 +6,8 @@ The website is built by Jekyll from `YAML` files in the `_data_` directory. Each
 
 They're easy to edit with the github web-based editor. The rest of it is coming!
 
+It makes extensive use of the [offical docs](https://github.com/bbcmicrobit/micropython/blob/master/docs/index.rst) and the data files are released under the same license.
+
 Questions/comments: jez@geekteacher.co.uk
 
 ## Why
